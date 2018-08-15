@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title></title>
+</head>
+<body>
+	
+	<form>
+		<fieldset>
+			<legend>Your Details</legend>
+			<label for="name">Name:</label>
+			<input id="name" type="text" name="name"></input>
+			<div>
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email"></input>
+			</div>
+		</fieldset>
+		<p></p>
+		<fieldset>
+			<legend>Your Review</legend>
+			
+			<span>How did you hear about us?</span>
+			<select name="sources">
+				<option value="google">Google</option>
+				<option value="facebook">Facebook</option>
+				<option value="Tsismis">Tsismis</option>
+			</select>
+			
+			<div>
+				<label>Would you visit us again?</label>
+				<br>
+				<input type="radio" name="answer" value="yes" checked>Yes
+				<input type="radio" name="answer" value="no">No
+				<input type="radio" name="answer" value="maybe">Maybe
+			</div>
+			
+			<div>
+				<label for="comment">Comments:</label>
+				<br>
+				<textarea id="comment" name="comment" rows="5" cols="40"></textarea>
+			</div>
+
+			<div>
+				<input id="signup" type="checkbox" name="answer" value="yes" checked></input>
+				<label for="signup">Sign me up for email updates</label>
+			</div>
+
+			<div>
+				<button>Submit review</button>
+			</div>
+
+		</fieldset>
+	<form>
+</body>
+</html>

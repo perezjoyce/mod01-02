@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registration</title>
+	<!-- link to external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<form>
+		<!-- remove closing tag for input because it's self-closing -->
+		<input type="text" name="username" placeholder="Write Your Full Name Here" required>
+		<input type="password" name="password" placeholder="Input Password" required>
+		
+		<br>
+
+		<!-- checked = auto -->
+		<input type="radio" name="genre" value="rock" checked>Rock
+		<input type="radio" name="genre" value="pop">Pop
+		<input type="radio" name="genre" value="jazz">Jazz
+
+		<br>
+
+		<input type="checkbox" name="fruit" value="apple" checked>Apple
+		<input type="checkbox" name="fruit" value="orange">Orange
+		<input type="checkbox" name="fruit" value="melon">Melon
+
+		<hr>
+
+		<input type="email" name="email" placeholder="email is disabled" disabled>
+		<input type="number" name="contact" placeholder="write numbers only">
+
+		<hr>
+
+		<select name="brand">
+			<option value="uniqlo">uniqlo</option>
+			<option value="penshoppe">penshoppe</option>
+			<option value="bench">bench</option>
+		</select>
+		
+
+		<hr>
+
+		<button><img src="assets/images/puppy.jpeg"></button>
+		<button>text ang laman nito</button>
+		<input type="file" name="song"></input>
+		
+
+		<div>
+		<textarea name="comments">Write your comments here...</textarea>
+		</div>
+
+		<div>
+		<input type="submit" name="submit">
+		</div>
+
+		<hr>
+		<!-- when the word "name" is pressed, cursor automatically goes to input box -->
+		<label>Name:<input type="text" name="firstname"></input></label>
+
+		<br>
+
+		<!-- declaration -->
+		<input id="female" type="radio" name="gender" value="f" type="radio" name="female"></input>
+		<!-- labeled to link to declared id -->
+		<label for="female">Female</label>
+
+		<input id="male" type="radio" name="gender" value="m" type="radio" 	name="male"></input>
+		<label for="female">Male</label>
+
+		<hr>
+		
+		<fieldset>
+			<legend>Contact Details</legend>
+			<label for="email">Email</label>	
+			<input id="email" type="email" name="email"></input>
+			<label>Mobile: <input type="number" name="number"></input></label>
+		</fieldset>
+
+	</form>
+
+	<hr>
+
+	<a href="about.html">About</a>
+	<div>
+	<a href="index.html">Index</a>
+	</div>
+</body>
+</html>
