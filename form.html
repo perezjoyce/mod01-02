@@ -11,58 +11,61 @@
 	<form>
 		<fieldset>
 			<legend>Your Details</legend>
-			<label for="name">Name:</label>
-			<input id="name" type="text" name="name"></input>
-			<div>
-			<label for="email">Email:</label>
-			<input id="email" type="email" name="email"></input>
+			<div class="row">
+				<label for="name">Name:</label>
+				<input id="name" class="text-field" type="text" name="name" placeholder="Please Write Your Complete Name"></input>
+			</div>
+			
+			<div class="row">
+				<label for="email">Email:</label>
+				<input id="email" class="text-field" type="email" name="email"></input>
 			</div>
 		</fieldset>
-		<p></p>
+		
 		<fieldset>
 			<legend>Your Review</legend>
-			
-			<span>How did you hear about us?</span>
-			<select name="sources">
-				<option value="google">Google</option>
-				<option value="facebook">Facebook</option>
-				<option value="Tsismis">Tsismis</option>
-			</select>
-			
-			<div>
-				<label>Would you visit us again?</label>
-				<br>
-				<input type="radio" name="answer" value="yes" checked>Yes
-				<input type="radio" name="answer" value="no">No
-				<input type="radio" name="answer" value="maybe">Maybe
+			<div class="row">
+				<span>How did you hear about us?</span>
+				<select name="sources">
+					<option value="google">Google</option>
+					<option value="facebook" selected>Facebook</option>
+					<option value="tsismis">Tsismis</option>
+				</select>
 			</div>
 			
-			<div>
+			<div class="row">
+				<div>Would you visit us again?</div>
+				<label for:"yes"><input id="yes" type="radio" name="answer" value="yes" checked>Yes</label>
+				<label for:"no"><input id="no" type="radio" name="answer" value="no">No</label>
+				<label for:"maybe"><input id="maybe" type="radio" name="answer" value="maybe">Maybe</label>
+			</div>
+			
+			<div class="row">
 				<label for="comment">Comments:</label>
 				<br>
-				<textarea id="comment" name="comment" rows="5" cols="40"></textarea>
+				<textarea id="comment" name="comment" rows="5" cols="40" required></textarea>
 			</div>
 
-			<div>
-				<input id="signup" type="checkbox" name="answer" value="yes" checked></input>
-				<label for="signup">Sign me up for email updates</label>
+			<div class="row">
+				<input id="signup" type="checkbox" name="answer" value="yes"></input>
+				<label for="signup">Sign me up for email updates.</label>
 			</div>
 
-			<div>
-				<button>Submit review</button>
+			<div class="row">
+				<button>Submit Review</button>
 			</div>
 
 		</fieldset>
 	<form>
 
 	<hr>
-	<a href="register.html">Register Now</a>
-	<div>
-	<a href="index.html">Index</a>
-	</div>
-	<div>
-	<a href="about.html">About</a>
-	</div>
+	<nav id="nav">
+		<ul>
+			<li><a href="register.html">Register Now</a></li>
+			<li><a href="index.html">Index</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</nav>
 	
 
 </body>

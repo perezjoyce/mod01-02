@@ -15,3 +15,43 @@ table, th, td {
 	border: 2px solid black;
 }
 
+.row {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.text-field {
+	width: 390px;
+}
+
+fieldset {
+	margin: 20px auto;
+	width: 450px;
+}
+
+legend {
+	font-weight: 700;
+}
+
+#comment {
+	width: 98%;
+}
+
+button {
+	font-weight: 700;
+	font-size: 13px;
+}
+
+#nav {
+	width: 308px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* parents id is #nav and select the child with space and the element name */
+#nav li {
+	list-style: none;
+	/* so text will be side-by-side*/
+	display: inline-block;
+	margin-right: 10px;
+}
