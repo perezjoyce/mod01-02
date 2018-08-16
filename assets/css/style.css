@@ -15,6 +15,11 @@ table, th, td {
 	border: 2px solid black;
 }
 
+fieldset {
+	margin: 20px auto;
+	width: 450px;
+}
+
 .row {
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -22,11 +27,6 @@ table, th, td {
 
 .text-field {
 	width: 390px;
-}
-
-fieldset {
-	margin: 20px auto;
-	width: 450px;
 }
 
 legend {
